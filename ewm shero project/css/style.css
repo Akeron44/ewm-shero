@@ -1,0 +1,618 @@
+/*
+--- 01 TYPOGRAPHY SYSTEM
+
+- Font sizes (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+- Spacing system (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+*/
+.header {
+  margin: 4.5rem 4.7rem 1rem 4.7rem;
+}
+.close-menu {
+  display: none;
+}
+.inner__container {
+  background-color: rgba(211, 216, 220, 0.93);
+  display: flex;
+  justify-content: space-between;
+  padding: 0 4.5rem;
+  align-items: center;
+  max-width: 182.6rem;
+  height: 8.9rem;
+  border-radius: 20px;
+  color: #222529;
+  position: relative;
+}
+
+.inner__container svg {
+  height: 2.2rem;
+  width: 2.2rem;
+}
+
+.inner__container h3 {
+  font-family: Cormorant;
+  font-size: 1.8rem;
+  font-weight: 400;
+}
+.inner__container .short {
+  display: none;
+}
+.inner__container .long {
+  display: block;
+}
+.inner__container nav {
+  display: flex;
+  align-items: center;
+  gap: 2.4rem;
+}
+.inner__container nav ul.show-nav {
+  transform: translateX(0%);
+  transition: transform 0.3s ease-in-out;
+  opacity: 1;
+  pointer-events: auto;
+  visibility: visible;
+}
+.inner__container nav .menu {
+  display: none;
+}
+.inner__container nav .close-menu {
+  display: none;
+  position: fixed;
+  top: 8%;
+  left: 3%;
+  color: #fff;
+  width: 3rem;
+  height: 3rem;
+  cursor: pointer;
+  z-index: 11;
+}
+.inner__container nav ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 3.2rem;
+}
+
+.inner__container nav ul li {
+  list-style: none;
+  font-family: Lora;
+  font-size: 1.8rem;
+  font-weight: 400;
+}
+.inner__container nav ul li:hover {
+  cursor: pointer;
+}
+
+.search-box {
+  width: 30rem;
+  height: 4.1rem;
+  position: relative;
+  transition: all 0.3s ease-in-out;
+}
+
+.search-box .icon {
+  position: absolute;
+  right: 5%;
+  top: 50%;
+  transform: translate(-5%, -50%);
+}
+.search-box input {
+  width: 100%;
+  border-radius: 20.5px;
+  padding: 1.2rem;
+  border: none;
+  font-size: 1.5rem;
+  transition: all 0.3s ease-in-out;
+}
+.search-box input::placeholder {
+  font-style: italic;
+  font-family: Lora;
+  font-size: 1.5rem;
+}
+
+.inner__container .icons__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1.6rem;
+}
+
+.icons__container .geo-alt {
+  width: 2.4rem;
+  height: 2.4rem;
+}
+.icons__container .person {
+  width: 2.8rem;
+  height: 2.8rem;
+}
+
+.inner__container .icons__container :hover {
+  cursor: pointer;
+}
+
+.ellipse__container {
+  position: relative;
+}
+.ellipse {
+  position: absolute;
+  width: 1.8rem;
+  height: 1.8rem;
+  right: -20%;
+  top: -90%;
+  transform: translate(24%, 105%);
+  background-color: #b7926a;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+
+/****************************************************************** 
+********************************* CURATED SECTION  ********************************* 
+********************************* ********************************* */
+
+.curated__section {
+  background-image: url("../img/deltetto-1953-grapes-940x530\ 1.png");
+  height: 83.8rem;
+  width: 100%;
+  background-size: cover;
+  background-position: center; /* or top, bottom, left, right */
+  background-repeat: no-repeat; /* or repeat-x, repeat-y, repeat */
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  color: #fff;
+  margin-bottom: 5.7rem;
+}
+
+.curated__section .inner__section {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+  margin-left: 11.1rem;
+}
+
+.curated__section .inner__section h1 {
+  font-size: 9.6rem;
+  font-family: Lora;
+  font-weight: 500;
+}
+
+.curated__section .inner__section p {
+  font-size: 2.6rem;
+  font-family: Lora;
+  font-weight: 400;
+}
+
+.curated__section .inner__section .actions__container {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  gap: 1.2rem;
+}
+
+.curated__section .inner__section .actions__container button {
+  background-color: #fff;
+  color: #111;
+}
+
+.curated__section .inner__section .actions__container button:first-child {
+  background-color: #b7926a;
+  color: #fff;
+}
+
+/****************************************************************** 
+********************************* CAROUSEL SECTION  ********************************* 
+********************************* ********************************* */
+
+.carousel {
+  gap: 9.9rem;
+  margin-bottom: 7.1rem;
+}
+.merchant .heading-secondary .br {
+  display: none;
+}
+
+.carousel .wrapper {
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  position: relative;
+  width: 100%;
+}
+
+.carousel .wrapper .carousel-items {
+  grid-auto-flow: column;
+  overflow-x: auto;
+  overflow-y: none;
+  grid-auto-columns: 100%;
+  scroll-behavior: smooth;
+  scrollbar-width: 0;
+  max-width: 100%;
+}
+.carousel .wrapper .carousel-items::-webkit-scrollbar {
+  display: none;
+}
+
+.carousel .wrapper .carousel-items li {
+  display: flex;
+}
+
+.carousel .wrapper .icon {
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  width: 2.4rem;
+  height: 2.4rem;
+}
+
+.carousel .wrapper .left {
+  left: -3%;
+}
+
+.carousel .wrapper .right {
+  right: -3%;
+}
+
+.carousel .wrapper .carousel-items li .card-item {
+  width: 50%;
+}
+
+.carousel .wrapper .carousel-items li .card-item-1 img {
+  object-fit: cover;
+  object-position: center;
+  width: 100%;
+  height: 100%;
+}
+
+.carousel .wrapper .carousel-items li .card-item-2 {
+  background-image: url("../img/Rectangle\ 7.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #b7926a;
+  align-items: center;
+  gap: 2.4rem;
+  padding: 4.8rem;
+}
+
+.carousel .wrapper .carousel-items li .card-item-2 h4 {
+  font-family: Lora;
+  font-size: 2.406rem;
+  font-weight: 600;
+  line-height: 30.8px;
+  text-align: center;
+}
+.carousel .wrapper .carousel-items li .card-item-2 p {
+  font-family: Montserrat;
+  font-size: 1.531rem;
+  font-weight: 400;
+  line-height: 18.67px;
+  text-align: center;
+  color: #fff;
+}
+.carousel .wrapper .carousel-items li .card-item-2 button {
+  font-family: Lora;
+  font-size: 1.312rem;
+  font-weight: 400;
+  line-height: 16.8px;
+  background: transparent;
+  color: #b7926a;
+}
+
+/****************************************************************** 
+********************************* GIFT SECTION  ********************************* 
+********************************* ********************************* */
+
+.gift {
+  gap: 2.4rem;
+}
+
+.gift .gift-card {
+  background-color: #f9f9f9;
+}
+
+.gift .gift-card img {
+  object-fit: cover;
+  width: 100%;
+}
+.gift .gift-card .info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1.2rem;
+  padding: 3.2rem 2.4rem;
+}
+
+.gift .gift-card .info h4 {
+  font-weight: 500;
+  font-size: 2.4rem;
+  font-family: Lora;
+  line-height: 30.72px;
+}
+.gift .gift-card .info p {
+  font-weight: 400;
+  font-size: 1.8rem;
+  font-family: Montserrat;
+  line-height: 22px;
+}
+.gift .gift-card .info a {
+  font-size: 2rem;
+  font-weight: 500;
+  font-family: Montserrat;
+  line-height: 24.38px;
+  text-decoration: none;
+  color: #b7926a;
+}
+
+.link-container {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 0.8rem;
+}
+
+.gift .gift-card .info .link-container .arrow-image {
+  height: 2rem;
+  width: 2rem;
+  color: #b7926a;
+}
+
+/****************************************************************** 
+********************************* WINE SECTION  ********************************* 
+********************************* ********************************* */
+
+.wine__container {
+  gap: 3.6rem;
+  margin-bottom: 15rem;
+}
+.wines {
+  gap: 1.2rem;
+}
+
+.wine-card img {
+  object-fit: cover;
+  width: 100%;
+}
+
+.wine-card,
+.wine-card .info {
+  display: flex;
+  justify-self: center;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+
+.wine-card .info {
+  height: 100%;
+  font-family: Montserrat;
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+}
+
+.wine-card .info p {
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 19.5px;
+  color: #000000;
+  display: block;
+}
+.wine-card .info h4 {
+  font-size: 1.8rem;
+  font-weight: 500;
+  line-height: 21.94px;
+  color: #b7926a;
+}
+.wine-card .info span {
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 19.5px;
+  color: rgba(0, 0, 0, 0.32);
+  text-decoration: line-through;
+}
+
+.wine-card .info .prices {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+}
+
+/****************************************************************** 
+********************************* FOLLOW SECTION  ********************************* 
+********************************* ********************************* */
+
+.gallery__container {
+  gap: 3.6rem;
+  margin-bottom: 11.3rem;
+}
+.gallery__container .follow {
+  margin-top: 3.2rem;
+  align-self: start;
+}
+.gallery {
+  gap: 0.4rem;
+}
+
+/****************************************************************** 
+********************************* MAP SECTION  ********************************* 
+********************************* ********************************* */
+.maps {
+  margin-bottom: 13.8rem;
+}
+.maps .map-item-1 {
+  background-image: url("../img/Rectangle\ 7.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  align-items: center;
+  height: 54rem;
+  font-family: Lora;
+  gap: 1.2rem;
+  padding: 0 1.2rem;
+}
+
+.maps .map-item-1 .icon img {
+  height: 3.8rem;
+  width: 3.8rem;
+}
+
+.maps .map-item-1 h3 {
+  font-size: 3.6rem;
+  font-weight: 400;
+  line-height: 46.08px;
+  letter-spacing: 0.06499999761581421px;
+  text-transform: uppercase;
+  color: #fff;
+}
+
+.maps .map-item-1 h4 {
+  font-size: 2.4rem;
+  font-weight: 400;
+  line-height: 30.72px;
+  letter-spacing: 0.06499999761581421px;
+  color: #b7926a;
+  text-align: center;
+}
+.maps .map-item-2 {
+  height: 54rem;
+}
+.maps .map-item-2 iframe {
+  height: 54rem;
+  width: 100%;
+}
+.maps .map-item-2 {
+  width: 100%;
+}
+
+.line {
+  border-top: solid 0.5px #b7926a;
+}
+/****************************************************************** 
+********************************* FOOTER SECTION  ********************************* 
+********************************* ********************************* */
+.footer {
+  margin: 9.7rem 8.1rem 8.2rem 8.1rem;
+  position: relative;
+  gap: 4.8rem;
+}
+.footer .footer-details {
+  gap: 2.5rem;
+  justify-content: start;
+}
+
+.footer .footer-details h2 {
+  font-family: Cormorant;
+  font-size: 2.127rem;
+  font-weight: 400;
+  line-height: 25.76px;
+  margin-bottom: 1.2rem;
+}
+.footer .footer-details h3 {
+  font-family: Lora;
+  font-size: 1.6rem;
+  font-weight: 600;
+  line-height: 20.48px;
+}
+.footer .footer-details p {
+  font-family: Montserrat;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 17.07px;
+}
+
+.footer .footer-details .signup-form {
+  margin-top: 1.2rem;
+  gap: 1.2rem;
+}
+
+.footer .footer-details .signup-form label {
+  font-family: Montserrat;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 17.07px;
+}
+.footer .footer-details .signup-form input {
+  border: none;
+  border-bottom: solid 0.5px #474443;
+}
+.footer .footer-details .signup-form button {
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 17.07px;
+  letter-spacing: 0.06499999761581421px;
+}
+
+/* SECOND PART */
+.footer .footer-info {
+  gap: 2.4rem;
+}
+
+.footer .footer-info .info-card {
+  padding: 0rem 0.8rem 3.2rem 0.8rem;
+  justify-content: start;
+  gap: 1.2rem;
+}
+.footer .footer-info .customer,
+.footer .footer-info .info-card .customer-servis {
+  margin-left: 11.9rem;
+}
+
+.footer .footer-info .info-card .card-header img {
+  display: none;
+}
+
+.footer .footer-info .info-card h2,
+.footer .footer-info .info-card h3 {
+  text-transform: uppercase;
+}
+
+.footer .footer-info .info-card a {
+  display: block;
+}
+.footer .footer-info .info-card h2,
+.footer .footer-info .info-card h3,
+.footer .footer-info .info-card h4,
+.footer .footer-info .info-card a {
+  font-family: Montserrat;
+  font-size: 1.6rem;
+  font-weight: 300;
+  line-height: 17.6px;
+  letter-spacing: 0.06499999761581421px;
+  color: #b7926a;
+  border-bottom: solid 0.5px #b7926a;
+  padding-bottom: 1.2rem;
+}
+
+.footer .footer-info .info-card h3,
+.footer .footer-info .info-card h4,
+.footer .footer-info .info-card a {
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 24px;
+  border: none;
+  padding-bottom: 0rem;
+}
+
+.footer .footer-info .info-card h4,
+.footer .footer-info .info-card a {
+  color: #1c1c1c;
+  padding-bottom: 0.4rem;
+}
+
+.copyright {
+  position: absolute;
+  bottom: -4.1rem;
+  font-family: Montserrat;
+  font-size: 1.4rem;
+  font-weight: 400;
+  line-height: 40px;
+  letter-spacing: 0.06499999761581421px;
+}
+
+.copyright .br {
+  display: none;
+}

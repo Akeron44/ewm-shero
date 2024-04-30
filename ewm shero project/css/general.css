@@ -1,0 +1,105 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+.container {
+  max-width: 173.4rem;
+  margin: 0 9.3rem 11.1rem 9.3rem;
+}
+
+/* FLEX REUSIBILITY */
+
+.flex {
+  display: flex;
+  flex-direction: column;
+  gap: 3.2rem;
+  background-color: #fff;
+  justify-content: center;
+}
+
+/* GRID REUSIBILITY */
+.grid {
+  display: grid;
+}
+
+.grid--center-h {
+  justify-content: center;
+}
+.grid--center-v {
+  align-items: center;
+}
+
+.grid--2-cols-50 {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.grid--2-cols-1-3 {
+  grid-template-columns: 1fr 3fr;
+}
+
+.grid--3-cols {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.grid--4-cols {
+  grid-template-columns: 1.5fr 1fr 1fr 1fr;
+}
+
+/* HEADING REUSIBILITY */
+.heading-primary {
+  font-size: 4rem;
+  line-height: 51.2px;
+  color: #000000;
+  font-family: Lora;
+  font-weight: 500;
+  width: 70%;
+}
+
+.heading-secondary {
+  font-size: 2.2rem;
+  line-height: 26.82px;
+  color: #000000;
+  font-family: Montserrat;
+  font-weight: 400;
+  color: #858080;
+}
+
+/* BUTTON REUSIBILITY */
+.btn,
+.btn:link,
+.btn:visited {
+  border: none;
+  cursor: pointer;
+  font-size: 2.4rem;
+  line-height: 29.26px;
+  font-weight: 500;
+  font-family: Montserrat;
+  padding: 0.8rem 1.6rem;
+}
+
+.btn-primary,
+.btn-primary:link,
+.btn-primary:visited  {
+  color: #202020;
+  border: solid 1px#B7926A;
+  border-radius: 2px;
+  background-color: #fff;
+}
+
+
+/* DISPLAY */
+
+.block {
+  display: block;
+}
+.none {
+  display: none;
+}
+
+

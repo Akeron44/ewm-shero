@@ -1,0 +1,458 @@
+/**************************/
+/* BELOW 1344px (Smaller desktops) */
+/**************************/
+
+@media (max-width: 84em) {
+  /* GENERAL */
+  html {
+    font-size: 56.25%;
+  }
+  .container {
+    margin-left: 8.3rem;
+    margin-right: 8.3rem;
+  }
+
+  /* HEADER */
+  .inner__container .short {
+    display: block;
+  }
+  .inner__container .long {
+    display: none;
+  }
+  /* CAROUSEL */
+  .carousel .wrapper {
+    padding: 0 1.6rem;
+  }
+}
+
+/**************************/
+/* BELOW 1200px (Landscape Tablets) */
+/**************************/
+
+@media (max-width: 75em) {
+  /* GENERAL */
+  .container {
+    margin-left: 7.3rem;
+    margin-right: 7.3rem;
+  }
+  .heading-primary {
+    width: 100%;
+  }
+  .btn {
+    font-size: 2rem;
+    padding: 0.8rem 1.6rem;
+  }
+
+  /* HEADER */
+  .header {
+    margin: 4.5rem 3.5rem 1rem 3.5rem;
+  }
+  .search-box {
+    width: 25rem;
+  }
+
+  /***** CURATED SECTION  ************** */
+  .curated__section .inner__section {
+    margin-left: 9.6rem;
+  }
+  .curated__section .inner__section h1 {
+    font-size: 7.4rem;
+  }
+  .curated__section .inner__section p {
+    font-size: 2.4rem;
+  }
+  /* CAROUSEL */
+  .carousel {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 4.8rem;
+  }
+  /* FOOTER */
+  .footer .footer-info .customer,
+  .footer .footer-info .info-card .customer-servis {
+    margin-left: 9.6rem;
+  }
+}
+
+/**************************/
+/* BELOW 944px (Tablets) */
+/**************************/
+
+@media (max-width: 59em) {
+  /* GENERAL */
+  html {
+    font-size: 50%;
+  }
+  .container {
+    margin-left: 4.8rem;
+    margin-right: 4.8rem;
+  }
+  .btn {
+    font-size: 1.8rem;
+    padding: 0.8rem 1.6rem;
+  }
+  /* HEADER */
+  .inner__container .short {
+    font-size: 3rem;
+  }
+  .inner__container nav {
+    order: -1;
+  }
+  .inner__container nav .menu {
+    display: block;
+  }
+  .inner__container nav ul {
+    transform: translateX(-100%);
+    height: 100%;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(20px);
+    color: #fff;
+    width: 100%;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+    padding: 9.6rem;
+    gap: 4.8rem;
+    transition: all 0.3s ease-in-out;
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+  }
+
+  .search-box {
+    width: 2.2rem;
+  }
+  .search-box input {
+    width: 0;
+    height: 0;
+    visibility: none;
+    transition: all 0.3s ease-in-out;
+    opacity: 0;
+  }
+  .search-box.grow {
+    top: 0px;
+    left: 0;
+    height: 100%;
+    position: absolute;
+    width: 100%;
+    z-index: 11;
+    transition: all 0.3s ease-in-out;
+  }
+  .search-box.grow input {
+    width: 100%;
+    height: 100%;
+    display: block;
+    border-radius: 0;
+    opacity: 1;
+    visibility: visible;
+    transition: all 0.3s ease-in-out;
+    border: solid 1px #111;
+  }
+  /***** CURATED SECTION  ************** */
+  .curated__section .inner__section {
+    margin-left: 6.4rem;
+  }
+  .curated__section .inner__section h1 {
+    font-size: 6.2rem;
+  }
+  .curated__section .inner__section p {
+    font-size: 2rem;
+  }
+  /* CAROUSEL */
+  /* .carousel {
+    grid-template-columns: repeat(1, 1fr);
+  } */
+  .carousel .wrapper {
+    padding: 0;
+    width: 100%;
+  }
+  .carousel .wrapper .carousel-items {
+    max-width: 100%;
+  }
+  .carousel .wrapper {
+    padding: 0 0.4rem;
+  }
+  /* FOOTER */
+  .footer .footer-info {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .footer .footer-info .customer,
+  .footer .footer-info .info-card .customer-servis {
+    margin-left: 0;
+  }
+}
+
+/**************************/
+/* BELOW 704px (Smaller tablets) */
+/**************************/
+
+@media (max-width: 44em) {
+  /* GENERAL */
+  .container {
+    margin-left: 24px;
+    margin-right: 24px;
+    margin-bottom: 6.625rem;
+  }
+  .btn {
+    font-size: 1.6rem;
+    padding: 0.8rem 1.6rem;
+  }
+
+  /* ALL SECTIONS BELOW CAROUSEL SECTION */
+  .gift,
+  .wine__container,
+  .gallery__container,
+  .maps {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  /* HEADER */
+  .header {
+    margin: 0;
+  }
+  .inner__container {
+    background-color: rgba(211, 216, 220);
+    border-radius: 0px;
+  }
+  /***** CURATED SECTION  ************** */
+  .curated__section .inner__section {
+    margin-left: 4.8rem;
+  }
+  .curated__section .inner__section h1 {
+    font-size: 4.4rem;
+  }
+  .curated__section .inner__section p {
+    font-size: 1.8rem;
+  }
+  /* CAROUSEL */
+  .carousel {
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 2.75rem;
+    gap: 3.375rem;
+  }
+
+  .carousel .merchant {
+    margin-left: 24px;
+    margin-right: 24px;
+  }
+  /* .carousel .wrapper {
+    padding: 0;
+  } */
+  /* TEST */
+  .carousel .wrapper {
+    padding: 0;
+    width: 100%;
+    overflow: hidden;
+  }
+  .carousel .wrapper .carousel-items {
+    max-width: 100%;
+  }
+  .carousel .wrapper .carousel-items li {
+    max-width: 100%;
+  }
+
+  .carousel .wrapper .icon {
+    border-radius: 50%;
+  }
+  .carousel .wrapper .icon img {
+    background-color: #fff;
+  }
+  .carousel .wrapper .left {
+    left: 2%;
+  }
+
+  .carousel .wrapper .right {
+    right: 2%;
+  }
+  /* MAPS */
+  .maps {
+    margin-bottom: 3.625rem;
+  }
+}
+
+/**************************/
+/* BELOW 544px (Phones) */
+/**************************/
+
+@media (max-width: 34em) {
+  /* GENERAL */
+  .btn {
+    font-size: 1.5rem;
+    padding: 0.8rem 1.6rem;
+  }
+  .heading-primary {
+    font-size: 3rem;
+  }
+
+  .heading-secondary {
+    font-size: 1.5rem;
+    line-height: 14.8px;
+  }
+
+  .flex {
+    gap: 1.8rem;
+  }
+  /********** HEADER **********/
+  .header .inner__container {
+    padding: 0 2.75rem;
+  }
+  .header .hide {
+    display: none;
+  }
+  .inner__container .icons__container .icon:last-child {
+    order: -1;
+  }
+  /********** CURATED SECTION **********/
+  .curated__section {
+    margin-bottom: 3.375rem;
+  }
+  .curated__section .inner__section {
+    margin-left: 3rem;
+  }
+  .curated__section .inner__section h1 {
+    font-size: 4rem;
+  }
+  .curated__section .inner__section p {
+    font-size: 1.5rem;
+  }
+  /********** CAROUSEL **********/
+  .carousel .wrapper .carousel-items li {
+    flex-direction: column;
+  }
+  .carousel .wrapper .carousel-items li .card-item {
+    width: 100%;
+    height: 50%;
+  }
+  /********** GIFT **********/
+  .gift {
+    gap: 1.625rem;
+  }
+  .gift .gift-card .info {
+    gap: 1.75rem;
+    padding: 2.75rem 1.75rem;
+  }
+  .gift .gift-card .info h4 {
+    font-size: 1.75rem;
+  }
+  .gift .gift-card .info p {
+    font-size: 1.5rem;
+    line-height: 22px;
+  }
+  .gift .gift-card .info a {
+    font-size: 1.5rem;
+  }
+  .gift .gift-card .info .link-container .arrow-image {
+    height: 1.5rem;
+    width: 1.5rem;
+  }
+  /********** WINE SECTION **********/
+  .wine__container {
+    gap: 3.625rem;
+  }
+  .wines {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .wine-card .info p {
+    font-size: 1.5rem;
+    line-height: 14.63px;
+  }
+  .wine-card .info h4 {
+    font-size: 1.75rem;
+    line-height: 17.07px;
+  }
+  .wine-card .info span {
+    font-size: 1.75rem;
+    line-height: 17.07px;
+  }
+  /********** FOLLOW **********/
+  .gallery__container {
+    gap: 3.625rem;
+    margin-bottom: 4.125rem;
+  }
+  .gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  /********** MAPS **********/
+  .maps .map-item-1 .icon img {
+    height: 3.75rem;
+    width: 3.75rem;
+  }
+  .maps .map-item-1 h3 {
+    font-size: 2.25rem;
+  }
+
+  .maps .map-item-1 h4 {
+    font-size: 1.75rem;
+  }
+  /********** LINE **********/
+  .line {
+    display: none;
+  }
+  /********** FOOTER **********/
+  .footer {
+    margin: 0rem 3rem 19rem 3rem;
+    position: relative;
+    gap: 4.8rem;
+  }
+  .footer .footer-info {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 2.5rem;
+  }
+  .footer .footer-details.flex {
+    gap: 1rem;
+  }
+  .footer .footer-details h2 {
+    display: none;
+  }
+  .footer .footer-details .signup-form button {
+    color: #000000;
+    margin-bottom: 4.375rem;
+    border: solid 1px #000000;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+  }
+
+  .footer .footer-info .info-card {
+    padding: 0rem;
+    justify-content: start;
+    gap: 1.2rem;
+  }
+  .footer .footer-info .info-card .card-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: solid 1px #ededed;
+  }
+  .footer .footer-info .info-card .card-header img {
+    display: block;
+  }
+  .footer .footer-info .info-card h2 {
+    font-size: 14.88px;
+    font-weight: 500;
+    line-height: 25.38px;
+    letter-spacing: 0.4000000059604645px;
+    color: rgba(0, 0, 0, 0.87);
+    border-bottom: none;
+  }
+  .footer .footer-info .info-card .info-container {
+    display: none;
+  }
+  .footer .footer-info .info-card .info-container.showInfo {
+    display: block;
+  }
+
+  .socialmedia-icons {
+    position: absolute;
+    bottom: -5.875rem;
+  }
+
+  .copyright {
+    bottom: -16.5rem;
+  }
+  .copyright .br {
+    display: block;
+  }
+}
